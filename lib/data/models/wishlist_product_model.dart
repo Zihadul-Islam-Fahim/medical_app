@@ -47,9 +47,9 @@ class WishlistProductModel {
 
 class Data {
   Data({
-    num? id,
-    num? productId,
-    num? userId,
+    int? id,
+    String? productId,
+    String? userId,
     String? createdAt,
     String? updatedAt,
     ProductModel? product,
@@ -72,17 +72,17 @@ class Data {
         json['product'] != null ? ProductModel.fromJson(json['product']) : null;
   }
 
-  num? _id;
-  num? _productId;
-  num? _userId;
+  int? _id;
+  String? _productId;
+  String? _userId;
   String? _createdAt;
   String? _updatedAt;
   ProductModel? _product;
 
   Data copyWith({
-    num? id,
-    num? productId,
-    num? userId,
+    int? id,
+    String? productId,
+    String? userId,
     String? createdAt,
     String? updatedAt,
     ProductModel? product,
@@ -96,11 +96,11 @@ class Data {
         product: product ?? _product,
       );
 
-  num? get id => _id;
+  int? get id => _id;
 
-  num? get productId => _productId;
+  String? get productId => _productId;
 
-  num? get userId => _userId;
+  String? get userId => _userId;
 
   String? get createdAt => _createdAt;
 

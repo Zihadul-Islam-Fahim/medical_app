@@ -43,8 +43,8 @@ class Data {
       num? id, 
       String? description, 
       String? rating, 
-      num? customerId, 
-      num? productId, 
+      String? customerId,
+      String? productId,
       String? createdAt, 
       String? updatedAt, 
       Profile? profile,}){
@@ -71,16 +71,16 @@ class Data {
   num? _id;
   String? _description;
   String? _rating;
-  num? _customerId;
-  num? _productId;
+  String? _customerId;
+  String? _productId;
   String? _createdAt;
   String? _updatedAt;
   Profile? _profile;
 Data copyWith({  num? id,
   String? description,
   String? rating,
-  num? customerId,
-  num? productId,
+  String? customerId,
+  String? productId,
   String? createdAt,
   String? updatedAt,
   Profile? profile,
@@ -96,8 +96,8 @@ Data copyWith({  num? id,
   num? get id => _id;
   String? get description => _description;
   String? get rating => _rating;
-  num? get customerId => _customerId;
-  num? get productId => _productId;
+  String? get customerId => _customerId;
+  String? get productId => _productId;
   String? get createdAt => _createdAt;
   String? get updatedAt => _updatedAt;
   Profile? get profile => _profile;

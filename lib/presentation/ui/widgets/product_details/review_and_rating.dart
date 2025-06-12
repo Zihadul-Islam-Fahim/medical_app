@@ -58,8 +58,8 @@ Row reviewAndRatingRow(double rating, int productId,BuildContext context) {
         child: Padding(
           padding: EdgeInsets.all(4.0),
           child: Icon(
-            Icons.favorite,
             size: 28,
+            Icons.favorite,
             color: AppColors.lightPrimaryColor,
           ),
         ),

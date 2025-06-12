@@ -209,7 +209,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 return Visibility(
                   visible: controller.inProgress == false,
                   replacement: SizedBox(
-                    height: Get.height * 0.24,
+                    height: Get.height * 0.25,
                     width: double.infinity,
                     child: ShimmerGridView(
                         height: Get.height * 0.21, width: Get.width * 0.3),
@@ -314,7 +314,7 @@ class _HomeScreenState extends State<HomeScreen> {
   SizedBox productList(List<ProductModel> productList ) {
 
     return SizedBox(
-      height: 175,
+      height: 178,
       width: double.infinity,
       child: ListView.separated(
         scrollDirection: Axis.horizontal,

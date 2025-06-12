@@ -10,7 +10,7 @@ class ProductDetailsDataModel {
     String? des,
     String? color,
     String? size,
-    num? productId,
+    String? productId,
     String? createdAt,
     String? updatedAt,
     ProductModel? product,
@@ -53,7 +53,7 @@ class ProductDetailsDataModel {
   String? _des;
   String? _color;
   String? _size;
-  num? _productId;
+  String? _productId;
   String? _createdAt;
   String? _updatedAt;
   ProductModel? _product;
@@ -67,7 +67,7 @@ class ProductDetailsDataModel {
     String? des,
     String? color,
     String? size,
-    num? productId,
+    String? productId,
     String? createdAt,
     String? updatedAt,
     ProductModel? product,
@@ -103,7 +103,7 @@ class ProductDetailsDataModel {
 
   String? get size => _size;
 
-  num? get productId => _productId;
+  String? get productId => _productId;
 
   String? get createdAt => _createdAt;
 

@@ -38,6 +38,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -60,9 +61,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         // ),
       ),
       body: GetBuilder<ProductDetailsController>(builder: (controller) {
+        final data = controller.productDetailsModel.data;
+
         if (controller.inProgress) {
           return SimmerProductDetails();
-        } else if (controller.productDetailsModel.data!.isEmpty) {
+        } else if (data!.isEmpty ) {
           return const Center(
             child: Text('Didn\'t get data'),
           );
@@ -135,8 +138,8 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
           SizedBox(
             height: Get.height * 0.015,
           ),
-          reviewAndRatingRow(productDetails.product?.star?.toDouble() ?? 0,
-              productDetails.productId?.toInt() ?? 1,context),
+          reviewAndRatingRow(double.parse(productDetails.product?.star ?? "0"),
+              int.parse(productDetails.productId ?? "1"),context),
           SizedBox(
             height: Get.height * 0.01,
           ),

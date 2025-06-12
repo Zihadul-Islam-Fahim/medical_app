@@ -28,14 +28,15 @@ class NetworkCaller {
         isSuccess: false,
         statusCode: response.statusCode,
         responseData: decodedResponse,
-        msg: decodedResponse['data'],
+        // msg: decodedResponse['data'],
       );
     }else {
       return NetworkResponse(
           isSuccess: false,
           statusCode: response.statusCode,
           responseData: decodedResponse,
-          msg: decodedResponse['data'] ?? 'Something Went Wrong');
+          msg: decodedResponse['data'] ?? 'Something Went Wrong'
+      );
     }
   }
 

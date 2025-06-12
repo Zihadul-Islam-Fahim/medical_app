@@ -25,7 +25,7 @@ class _CartProductItemState extends State<CartProductItem> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Get.to(ProductDetailScreen(productId: widget.cartItem.productId!));
+        Get.to(ProductDetailScreen(productId: int.parse(widget.cartItem.productId!)));
       },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),

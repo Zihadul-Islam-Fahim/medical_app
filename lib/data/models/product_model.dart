@@ -7,14 +7,14 @@ class ProductModel {
     String? title,
     String? shortDes,
     String? price,
-    num? discount,
+    String? discount,
     String? discountPrice,
     String? image,
-    num? stock,
-    num? star,
+    String? stock,
+    String? star,
     String? remark,
-    num? categoryId,
-    num? brandId,
+    String? categoryId,
+    String? brandId,
     String? createdAt,
     String? updatedAt,
     BrandModel? brand,
@@ -62,14 +62,14 @@ class ProductModel {
   String? _title;
   String? _shortDes;
   String? _price;
-  num? _discount;
+  String? _discount;
   String? _discountPrice;
   String? _image;
-  num? _stock;
-  num? _star;
+  String? _stock;
+  String? _star;
   String? _remark;
-  num? _categoryId;
-  num? _brandId;
+  String? _categoryId;
+  String? _brandId;
   String? _createdAt;
   String? _updatedAt;
   BrandModel? _brand;
@@ -80,14 +80,14 @@ class ProductModel {
     String? title,
     String? shortDes,
     String? price,
-    num? discount,
+    String? discount,
     String? discountPrice,
     String? image,
-    num? stock,
-    num? star,
+    String? stock,
+    String? star,
     String? remark,
-    num? categoryId,
-    num? brandId,
+    String? categoryId,
+    String? brandId,
     String? createdAt,
     String? updatedAt,
     BrandModel? brand,
@@ -120,21 +120,21 @@ class ProductModel {
 
   String? get price => _price;
 
-  num? get discount => _discount;
+  String? get discount => _discount;
 
   String? get discountPrice => _discountPrice;
 
   String? get image => _image;
 
-  num? get stock => _stock;
+  String? get stock => _stock;
 
-  num? get star => _star;
+  String? get star => _star;
 
   String? get remark => _remark;
 
-  num? get categoryId => _categoryId;
+  String? get categoryId => _categoryId;
 
-  num? get brandId => _brandId;
+  String? get brandId => _brandId;
 
   String? get createdAt => _createdAt;
 

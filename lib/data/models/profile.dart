@@ -36,7 +36,7 @@ class Data {
   String? shipPostcode;
   String? shipCountry;
   String? shipPhone;
-  int? userId;
+  String? userId;
   String? createdAt;
   String? updatedAt;
   User? user;
